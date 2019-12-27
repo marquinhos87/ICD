@@ -1,7 +1,3 @@
-substiruir linha 22 e 40 por IP do LVS
-substituir linha 13 e 27 por interface do LVS
-
-keepalived: /etc/keepalived/keepalived.conf
 vrrp_sync_group VG1 {
         group {
                 RH_EXT
