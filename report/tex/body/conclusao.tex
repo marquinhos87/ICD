@@ -1,0 +1,17 @@
+\chapter{Conclusão} \label{chap:conc}
+
+\hspace{5mm} Assim conclui-se que os objetivos inicialmente propostos foram atingidos. O processo inicial de contextualização, perceção e instalação em \emph{localhost} da aplicação foi importante, para um melhor entendimento da arquitetura da mesma, bem como das suas dependências e configurações necessárias.
+
+\hspace{5mm} A definição da arquitetura e infraestrutura apresentada para os componentes da aplicação \textbf{Tucano}, permite elevada disponibilidade, performance, face aos recursos disponíveis das máquinas onde foram testadas. 
+
+\hspace{5mm}Do mesmo modo, conseguiu-se aumentar a resistência a falhas dos pontos críticos com a replicação de alguns componentes, tais como, \textbf{LVS} e \emph{web services} e aumento de nodos no cluster. 
+
+\hspace{5mm} Ocorreram algumas dificuldades no encaminhamento do frontend para o backend, pois inicialmente os nodos do cluster estavam numa rede diferente do \textbf{LVS}. No entanto, para resolver este problema de comunicação entre os componentes foi necessário colocá-los na mesma rede, sendo que o \textbf{LVS} passou a reencaminhar pedidos para os nodos do cluster que tenham o serviço do \textbf{backend}.
+
+\hspace{5mm} A concretização do patricionamento do disco presente nos nodos do cluster, tornou-se difícil. O patricionamento é necessário, para garantir a independência dos serviços \textbf{backend} e \textbf{base de dados}, ou seja, estes podem estar em nodos diferentes do cluster, logo os seus dados, também terão que estar em partições diferentes.
+
+\hspace{5mm} A falta de recursos dificultou a realização dos testes, como a limitação da placa de rede, bem como o número de máquinas ligadas em simultâneo, devido à falta de memória. 
+
+\hspace{5mm} A criação do serviço do servidor backend, também dificultou  e impediu o progresso, pois a equipa desconhecia a forma de criação de serviços \textbf{systemd}, mas com o auxílio da equipa docente, conseguiu-se desenvolver o \emph{script}.
+
+\hspace{5mm} Após o estabelecimento da infraestrutura, não se conseguiu executar a funcionalidade \textbf{login}, o qual se devia ao problema de os nodos do cluster conterem placas \textbf{NAT} ativas, e assim o backend "respondia" para esta mesma placa, ou seja, erradamente, pois deveria ser para o \textbf{IP} do \textbf{LVS}. Deste modo, a solução foi remover esta placa, no entanto, a conexão entre os nodos do cluster e as máquinas \textbf{DRBD}, usava a placa NAT. Para evitar problemas de conexão entre os nodos do \textbf{Cluster}, com as máquinas do \textbf{DRBD}, colocou-se todas as máquinas na mesma rede.

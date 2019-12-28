@@ -1,0 +1,21 @@
+\chapter{Descrição/perceção do Problema}
+
+\hspace{5mm} Neste capítulo faz-se uma descrição/contextualização do problema em análise, abordando-se os objetivos pretendidos.
+
+\section{Objetivos}
+\hspace{5mm} Os principais objetivos deste projeto concentram-se no desenvolvimento de uma arquitetura, com infraestruturas que promovam alta disponibilidade e desempenho, sendo necessário planeamento e deployment para a concretização do mesmo. Após a construção desta arquitetura, tem-se que perceber, os pontos críticos da mesma, e soluções para reduzir o impacto desses mesmos pontos.
+
+\section{Análise da aplicação}
+
+\hspace{5mm} A análise da arquitetura da aplicação torna-se importante para melhor perceção da divisão dos diferentes componentes. Deste modo, com uma análise do relatório elaborado pelos criadores da aplicação, conseguiu-se perceber que a aplicação está divida em dois subsistemas, \textbf{frontend} e \textbf{backend}.
+
+\hspace{5mm} O frontend, utiliza uma biblioteca base do ReactJS em conjunto com componentes na sua maioria do Semantic UI, tendo um servidor em constante execução.
+
+\hspace{5mm} O backend, é composto por uma API utilizando a framework Phoenix escrita em Elixir que por sua vez compila para a BEAM (Erlang virtual machine) garantindo assim de forma fácil a escalabilidade da plataforma. Do mesmo modo, que o frontend, o backend consiste num servidor aplicacional, que interage com o servidor de base de dados de PostgreSQL.
+
+\section{Instalação e Configuração}
+\hspace{5mm} Com a finalidade de complementar a análise feita anteriormente, e utilizando a documentação disponibilizada pela equipa que desenvolveu o \textbf{Tucano}, procedeu-se à instalação da mesma, seguindo o guião de instalação.
+
+\hspace{5mm} Deste modo, o grupo decidu instalar inicialmente todos os componentes na máquina \emph{localhost}, para entender as dependências, e configurações necessárias para o bom funcionamento da aplicação. Os processos seguidos nesta instalação, serão realizados novamente, no deployment do \textbf{Tucano}, para a arquitetura apresentada no decorrer do relatório. 
+
+Assim, conclui-se que o projeto foi importante para uma melhor perceção e aprofundamento dos conhecimentos obtidos nas aulas teóricas, bem como entender como as aplicações de hoje em dia estão preparadas para falhas que acontecem diariamente.
