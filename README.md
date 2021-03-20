@@ -6,4 +6,4 @@
  - João Marques (marquinhos87)
 
 ## Relatório:
-Overleaf: 
+Git: https://github.com/marquinhos87/ICD-project/blob/master/report/rel_a81826_a81744_a82880_pg41074_vfinal.pdf 
