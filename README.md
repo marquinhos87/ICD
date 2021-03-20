@@ -1,4 +1,4 @@
-# ICD
+# ICD-project
 
 # Grupo:
  - José Pereira (josepereira1)
